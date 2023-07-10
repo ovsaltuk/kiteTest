@@ -1,0 +1,20 @@
+@import '../var';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: $nav-bg-color;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

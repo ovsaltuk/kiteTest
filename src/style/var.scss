@@ -1,0 +1,23 @@
+$main-color: #BC1B24;
+$accent-color: #a5141b;
+$added-color: #035b00;
+$nav-bg-color: #583DC5;
+
+@mixin btn {
+  padding: 9px 19px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  background: $main-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  &:hover {
+    background: $accent-color;
+  }
+  &:disabled {
+    background: $added-color;
+  }
+}

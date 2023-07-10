@@ -1,0 +1,38 @@
+@import '../var';
+
+.order-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.order-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+}
+
+.order-form__input-title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.order-form__input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-form__error {
+  margin-bottom: 20px;
+  min-height: 12px;
+  font-size: 12px;
+  color: red;
+}
+
+.order-form__btn {
+  @include btn;
+}

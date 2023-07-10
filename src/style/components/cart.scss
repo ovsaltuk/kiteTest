@@ -1,0 +1,22 @@
+@import '../var';
+
+.cart__container {
+  padding: 50px;
+}
+
+.cart__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 30px;
+  max-height: 100px;
+}
+
+.cart__product-img {
+  max-height: 100%;
+  max-width: 50px;
+}
+
+.cart__btn {
+  @include btn;
+}
